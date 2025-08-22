@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>"Senior Year Protfolio"</title>
+        <style>
+            body{
+                font-family: Arial, 'Times New Roman';
+                text-align: center;
+                background: linear-gradient(to bottom, beige, wheat);
+            }
+            .title{
+                font-size: 32px;
+                font-weight: bold;
+                color: gold;
+            }
+            .subtitle{
+                font-size: 22px;
+                color: gold;
+            }
+            .header{
+                background-image: url(BuffsBanner.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no repeat;
+                padding: 10px;
+                background-size: 100% 100%;
+                border: 2px solid black;
+            }
+            a.section-link{
+                color: black;
+                font-size: 26px;
+                border: 2px solid gold;
+                width: 20%;
+                margin: 20px ;
+                padding: 10px;
+                transition: background-color 0.5s ease, color 0.5s ease;
+            }
+            a.section-link:hover{
+                background-color: black;
+                color: gold;
+            }
+            p.section-description{
+                font-size: 20px;
+                color: black;
+                text-align: center;
+                margin: 10px auto 20px auto;
+                padding: 20px;
+                padding-bottom: 40px 0;
+                border: 2px solid gold; 
+                border-radius: 4px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+            }
+            .section-links {
+                display: flex;
+                justify-content: center;
+                margin: 30px auto;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+            }
+            .dropdown-links {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9; /* Background for dropdown */
+                min-width: 200px; /* Width of dropdown */
+                box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+                z-index: 1;
+                margin-top: 4px;
+            }
+            .dropdown-links a {
+                color: black;
+                padding: 8px 12px;
+                text-decoration: none;
+                 display: block;
+            }
+            .dropdown-links a:hover {
+                background-color: #f1f1f1;
+            }
+            .dropdown:hover .dropdown-links {
+                display: block;
+            }
+            .img-row {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+            
+            }
+            .img-row img{
+                width: 350px;
+                height: 400px;
+                display: block;
+            }
+            .footer{
+                text-align: right;
+                margin-top: 80px; 
+                padding: 20px; 
+                font-size: 14px; 
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+    <div class ="header">
+        <p class="title">Protfolio</p>
+        <p class="subtitle">Ben Clymer</p>
+    </div>
+    <div class="dropdown">
+        <a class="section-link">Writing Samples</a>
+            <div class="dropdown-links">
+                <a href="PreviewExample.pdf" target="_blank">Game Preview Example</a>
+                <a href="RecapExample.pdf" target="_blank">Game Recap Example</a>
+                <a href="KU Coach Quotes.pdf" target="_blank">Post Game Coach Quotes</a>
+            </div>
+        </div>
+        <a class="section-link">SQL Sample</a>
+        <a class="section-link" href="Graduated Resume.pdf" target="_blank">Resume</a>
+        <a class="section-link" href="Python Sample.pdf" target="_blank">Python Sample</a>
+        <a class="section-link">College Class Experience</a>
+    </div>
+    <div class="about-me">
+        <p class="section-description">Hello, my name is Ben Clymer. I graduated 
+            from the University of Colorado Boulder in May 2025 with a major in Communications
+            and minors in Sprots Media and Data Science. I'm a sports enthusiast who hopes to pursue a
+            job in a sports related field working as part of a communications team or in data analytics. 
+            I have experience working for CU's Athletic Communications Department as a secondary contact for the 
+            football team, women's soccer team, men's and women's basketball teams,
+            and the women's soccer team. I also worked as a communication intern for the Colorado
+            Springs Switchbacks for their USL Championship title winning season in 2024-2025. I have also
+            gained expereince leading and managing peers while working at CU's rec center for four years where
+            I worked as a Team Sports Coordinator overseeing student supervisors and referees; scheduling them and
+            making sure intramural and club sports ran smoothly. My favorite sports are soccer and hockey,
+            which I played in high school, and I hope to eventually work in one of those sports fields
+            although I'm happy to start out in any sport. I grew up in Skaneateles, New York and moved
+            out to Boulder, Colorado for college. Since graduating I've now moved back to New York to begin my professional
+            career in athletics. Below are some pictures of me skiing in Colorado with friends and family, a headshot of me,
+            and playing hockey with some of my High School teamates and friends:</p>
+    </div>    
+    <div class="img-row">
+        <img src="Ski.jpeg" alt="2025 Breckenridge" >
+        <img src="2025headshot.jpg" alt="21st Birthday">
+        <img src="FullSizeRender.jpeg" alt="Hockey Alumni Game">
+    </div>
+    </body>
+    <footer> © 2025 Ben Clymer • Senior Portfolio </footer>
+</html>
